@@ -1,0 +1,13 @@
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
