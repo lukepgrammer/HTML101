@@ -5,6 +5,11 @@ section img {
     margin: 0 auto;
 }
 
+picture img{
+    display: block;
+    margin: 2px auto;
+    border-radius: 8px;
+}
 a {
     text-decoration: none;
     color: blue;
@@ -49,6 +54,10 @@ h1 {
 }
 
 mark:hover{
+    /* 
+    Efeito ao passar o mouse sobre a frase destacada
+    Não tive razão nenhuma pra fazer isso, só queria praticar o hover mesmo.
+    */
     background: black;
     color: white;
     cursor: pointer;
