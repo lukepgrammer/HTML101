@@ -4,11 +4,13 @@ section img {
     display: block;
     margin: 0 auto;
     width: 90%;
-    max-width: 800px;
+    max-width: 800px; /* definir uma largura min-max para as imagens melhora o enquadramento em telas mobile */
     height: auto;
+    border-radius: 8px; 
+    /* bordas arredondadas, não sei, fica mais apresentável */
 }
 
-picture img{
+picture img, picture source{
     display: block;
     margin: 2px auto;
     border-radius: 8px;
@@ -80,21 +82,4 @@ mark:hover{
     padding: 30px;
 
 
-}
-
-#rickroll{
-    color: white;
-    text-decoration: none;
-}
-
-#rickroll:visited{
-    color: white;
-}
-
-#rickroll:hover{
-    background: black;
-    color: yellow;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
 }
