@@ -16,26 +16,96 @@
         </nav>
     </header>
     <br>
+    <main>
     <h1>
-        Página de cadastro em construção. Em breve você poderá se cadastrar para participar dos nossos projetos!
+        Cadastro de usuários
     </h1>
     <br>
-    <section>
         <picture>
-            <img src="imagens/idoso-trabalhando.jpg" alt="idosos trabalhando na obra desta página">
+            <source media="(max-width: 800px)" srcset="imagens/idoso_atendimento_1.jpg" alt="Idoso sendo atendido por uma profissional de saúde alt standard">
+            <source media="(min-width: 800px)" srcset="imagens/idoso_atendimento_2.jpg" alt="Idoso sendo atendido por uma profissional de saúde 2">
+            <source media="(min-width: 800px)" srcset="imagens/idoso_atendimento_3.webp" alt="profissional da saúde cuidando de homem idoso">
+            <img src="imagens/idoso_atendimento_standard.jpg" alt="idoso sendo atendido por uma profissional de saúde">
         </picture>
+        <br>
+    <section>
+        <h3>Área de formulário</h3>
+        <p style="font-size: 20px; color: black; text-align: center;">
+            Seja bem-vindo ao formulário de cadastro da ONG Eldermaxxing! Estamos felizes em saber que você deseja se juntar a nós na missão de promover um envelhecimento saudável e ativo para pessoas idosas. 
+            Por favor, preencha o formulário abaixo com suas informações para que possamos entrar em contato com você e mantê-lo informado sobre nossas atividades e projetos.
+        </p>
+        <br>
+        
+        <p style="font-size: 18px; color: rgb(192, 15, 15); text-align: center;">
+            *Todos os campos são obrigatórios
+        </p>
+        <form action="#" method="post">
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
 
-        <h2 id="idoso-obra">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_self" alt="Você foi rick rolled" id="rickroll">
-            O que você está olhando? Não há nada por aqui
-            </a>
+            <label for="cpf">CPF:</label><br>
+            <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required><br><br>
+            <!--Aqui o pattern ajuda a validar o que foi digitado e o placeholder orienta o usuário sobre o formato padrão-->
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="60" required><br><br>
+            <!--Contando a partir dos 60 anos-->
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000" required><br><br>
+
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+
+            <label for="cep">CEP:</label><br>
+            <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required><br><br>
+
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade" required><br><br>
+            
+            <label for="estado">Estado:</label><br>
+            <input type="text" id="estado" name="estado" required><br><br>
+
+            <label for="genero">Genero:</label><br>
+            <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+                <option value="nao_informar">Prefiro não informar</option>
+
+            <!--Não sei se fará diferença, mas coloquei mais opções de gênero visando uma plataforma mais inclusiva e moderna-->
+            
+            </select><br><br>
+
+
+            <!--Para dar um ar mais moderno, adicionei uma pequena "lista" de interesses conectada aos projetos
+            Só pra fixar mais a ideia do que a ONG faz mesmo-->
+            <label for="interesses">Interesses (selecione todos que se aplicam):</label><br>
+            <input type="checkbox" id="atividade_fisica" name="interesses" value="atividade_fisica">
+            <label for="atividade_fisica">Atividades Físicas</label><br>
+            <input type="checkbox" id="nutricao" name="interesses" value="nutricao">
+            <label for="nutricao">Nutrição</label><br>
+            <input type="checkbox" id="apoio_emocional" name="interesses" value="apoio_emocional">
+            <label for="apoio_emocional">Apoio Emocional</label><br>
+            <input type="checkbox" id="atividades_culturais" name="interesses" value="atividades_culturais">
+            <label for="atividades_culturais">Atividades Culturais</label><br>
+            <input type="checkbox" id="palestras_educativas" name="interesses" value="palestras_educativas">
+            <label for="palestras_educativas">Palestras Educativas</label><br><br>
+
+            <input type="submit" value="Cadastrar">
+
+        </form>
 
     </section>
+    </main>
 
-    <section>
+    <br>
         <footer>
             &copy; 2025 ONG Eldermaxxing. Todos os direitos reservados.
         </footer>
-    </section>
 </body>
 </html>
