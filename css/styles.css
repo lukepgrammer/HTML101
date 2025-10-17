@@ -68,18 +68,3 @@ mark:hover{
     color: white;
     cursor: pointer;
 }
-
-/* Página cadastro em construção */
-
-
-
-#idoso-obra{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    background: white;
-    color: white;
-    padding: 30px;
-
-
-}
